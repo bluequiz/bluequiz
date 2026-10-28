@@ -1,0 +1,1563 @@
+{
+ "generatedAt": "2026-10-28T17:29:26.022Z",
+ "sections": [
+  {
+   "id": "Abydos",
+   "name": "아비도스"
+  },
+  {
+   "id": "Gehenna",
+   "name": "게헨나"
+  },
+  {
+   "id": "Millennium",
+   "name": "밀레니엄"
+  },
+  {
+   "id": "Trinity",
+   "name": "트리니티"
+  },
+  {
+   "id": "Hyakkiyako",
+   "name": "백귀야행"
+  },
+  {
+   "id": "Shanhaijing",
+   "name": "산해경"
+  },
+  {
+   "id": "RedWinter",
+   "name": "붉은겨울"
+  },
+  {
+   "id": "Valkyrie",
+   "name": "발키리"
+  },
+  {
+   "id": "SRT",
+   "name": "SRT"
+  },
+  {
+   "id": "Arius",
+   "name": "아리우스"
+  },
+  {
+   "id": "Highlander",
+   "name": "하이랜더"
+  },
+  {
+   "id": "WildHunt",
+   "name": "와일드헌트"
+  },
+  {
+   "id": "Odyssey",
+   "name": "오디세이아"
+  },
+  {
+   "id": "Collab",
+   "name": "콜라보"
+  }
+ ],
+ "students": [
+  {
+   "id": 10005,
+   "name": "호시노",
+   "answers": [
+    "호시노"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10010,
+   "name": "시로코",
+   "answers": [
+    "시로코"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10100,
+   "name": "시로코*테러",
+   "answers": [
+    "쿠로코"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13004,
+   "name": "노노미",
+   "answers": [
+    "노노미"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13008,
+   "name": "세리카",
+   "answers": [
+    "세리카"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23005,
+   "name": "아야네",
+   "answers": [
+    "아야네"
+   ],
+   "section": "Abydos",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10000,
+   "name": "아루",
+   "answers": [
+    "아루"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10002,
+   "name": "하루나",
+   "answers": [
+    "하루나"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10004,
+   "name": "히나",
+   "answers": [
+    "히나"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10006,
+   "name": "이오리",
+   "answers": [
+    "이오리"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10009,
+   "name": "이즈미",
+   "answers": [
+    "이즈미"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10060,
+   "name": "메구",
+   "answers": [
+    "메구"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10078,
+   "name": "카스미",
+   "answers": [
+    "카스미"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10093,
+   "name": "키라라",
+   "answers": [
+    "키라라"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10107,
+   "name": "치아키",
+   "answers": [
+    "치아키"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13002,
+   "name": "아카리",
+   "answers": [
+    "아카리"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13005,
+   "name": "카요코",
+   "answers": [
+    "카요코"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13006,
+   "name": "무츠키",
+   "answers": [
+    "무츠키"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13007,
+   "name": "준코",
+   "answers": [
+    "준코"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16000,
+   "name": "하루카",
+   "answers": [
+    "하루카"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16014,
+   "name": "이부키",
+   "answers": [
+    "이부키"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20008,
+   "name": "아코",
+   "answers": [
+    "아코"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20012,
+   "name": "세나",
+   "answers": [
+    "세나"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20016,
+   "name": "이로하",
+   "answers": [
+    "이로하"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20033,
+   "name": "마코토",
+   "answers": [
+    "마코토"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20040,
+   "name": "사츠키",
+   "answers": [
+    "사츠키"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20058,
+   "name": "에리카",
+   "answers": [
+    "에리카"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23001,
+   "name": "후우카",
+   "answers": [
+    "후우카"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26000,
+   "name": "치나츠",
+   "answers": [
+    "치나츠"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26002,
+   "name": "주리",
+   "answers": [
+    "주리"
+   ],
+   "section": "Gehenna",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10001,
+   "name": "에이미",
+   "answers": [
+    "에이미"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10007,
+   "name": "마키",
+   "answers": [
+    "마키"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10008,
+   "name": "네루",
+   "answers": [
+    "네루"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10012,
+   "name": "스미레",
+   "answers": [
+    "스미레"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10015,
+   "name": "아리스",
+   "answers": [
+    "아리스"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10016,
+   "name": "미도리",
+   "answers": [
+    "미도리"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10018,
+   "name": "유즈",
+   "answers": [
+    "유즈"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10052,
+   "name": "노아",
+   "answers": [
+    "노아"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10062,
+   "name": "토키",
+   "answers": [
+    "토키"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10063,
+   "name": "코유키",
+   "answers": [
+    "코유키"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10115,
+   "name": "레이",
+   "answers": [
+    "레이"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10135,
+   "name": "케이",
+   "answers": [
+    "케이"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13000,
+   "name": "아카네",
+   "answers": [
+    "아카네"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13010,
+   "name": "유우카",
+   "answers": [
+    "유우카"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13011,
+   "name": "모모이",
+   "answers": [
+    "모모이"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16001,
+   "name": "아스나",
+   "answers": [
+    "아스나"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16002,
+   "name": "코토리",
+   "answers": [
+    "코토리"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20000,
+   "name": "히비키",
+   "answers": [
+    "히비키"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20001,
+   "name": "카린",
+   "answers": [
+    "카린"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20013,
+   "name": "치히로",
+   "answers": [
+    "치히로"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20020,
+   "name": "히마리",
+   "answers": [
+    "히마리"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20041,
+   "name": "리오",
+   "answers": [
+    "리오"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23003,
+   "name": "하레",
+   "answers": [
+    "하레"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23004,
+   "name": "우타하",
+   "answers": [
+    "우타하"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26001,
+   "name": "코타마",
+   "answers": [
+    "코타마"
+   ],
+   "section": "Millennium",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10003,
+   "name": "히후미",
+   "answers": [
+    "히후미"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10013,
+   "name": "츠루기",
+   "answers": [
+    "츠루기"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10019,
+   "name": "아즈사",
+   "answers": [
+    "아즈사"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10020,
+   "name": "코하루",
+   "answers": [
+    "코하루"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10029,
+   "name": "나츠",
+   "answers": [
+    "나츠"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10035,
+   "name": "우이",
+   "answers": [
+    "우이"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10036,
+   "name": "히나타",
+   "answers": [
+    "히나타"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10049,
+   "name": "카즈사",
+   "answers": [
+    "카즈사"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10058,
+   "name": "미네",
+   "answers": [
+    "미네"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10059,
+   "name": "미카",
+   "answers": [
+    "미카"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10061,
+   "name": "사쿠라코",
+   "answers": [
+    "사쿠라코"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10068,
+   "name": "레이사",
+   "answers": [
+    "레이사"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10077,
+   "name": "이치카",
+   "answers": [
+    "이치카"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10110,
+   "name": "세이아",
+   "answers": [
+    "세이아"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13003,
+   "name": "하스미",
+   "answers": [
+    "하스미"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16003,
+   "name": "스즈미",
+   "answers": [
+    "스즈미"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16018,
+   "name": "라브",
+   "answers": [
+    "라브"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20003,
+   "name": "마시로",
+   "answers": [
+    "마시로"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20024,
+   "name": "나기사",
+   "answers": [
+    "나기사"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23000,
+   "name": "아이리",
+   "answers": [
+    "아이리"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23002,
+   "name": "하나에",
+   "answers": [
+    "하나에"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23007,
+   "name": "하나코",
+   "answers": [
+    "하나코"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23008,
+   "name": "마리",
+   "answers": [
+    "마리"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26003,
+   "name": "세리나",
+   "answers": [
+    "세리나"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26004,
+   "name": "시미코",
+   "answers": [
+    "시미코"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26005,
+   "name": "요시미",
+   "answers": [
+    "요시미"
+   ],
+   "section": "Trinity",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10014,
+   "name": "이즈나",
+   "answers": [
+    "이즈나"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10033,
+   "name": "와카모",
+   "answers": [
+    "와카모"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10034,
+   "name": "미모리",
+   "answers": [
+    "미모리"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10040,
+   "name": "츠쿠요",
+   "answers": [
+    "츠쿠요"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10065,
+   "name": "카호",
+   "answers": [
+    "카호"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10081,
+   "name": "유카리",
+   "answers": [
+    "유카리"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10082,
+   "name": "렌게",
+   "answers": [
+    "렌게"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10083,
+   "name": "키쿄",
+   "answers": [
+    "키쿄"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10090,
+   "name": "우미카",
+   "answers": [
+    "우미카"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10119,
+   "name": "나구사",
+   "answers": [
+    "나구사"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13001,
+   "name": "치세",
+   "answers": [
+    "치세"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13009,
+   "name": "츠바키",
+   "answers": [
+    "츠바키"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16004,
+   "name": "피나",
+   "answers": [
+    "피나"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16009,
+   "name": "미치루",
+   "answers": [
+    "미치루"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20015,
+   "name": "카에데",
+   "answers": [
+    "카에데"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20046,
+   "name": "니야",
+   "answers": [
+    "니야"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 23006,
+   "name": "시즈코",
+   "answers": [
+    "시즈코"
+   ],
+   "section": "Hyakkiyako",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10011,
+   "name": "슌",
+   "answers": [
+    "슌"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10050,
+   "name": "코코나",
+   "answers": [
+    "코코나"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10069,
+   "name": "루미",
+   "answers": [
+    "루미"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10070,
+   "name": "미나",
+   "answers": [
+    "미나"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10104,
+   "name": "레이죠",
+   "answers": [
+    "레이죠"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10144,
+   "name": "슈에링",
+   "answers": [
+    "슈에링"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20002,
+   "name": "사야",
+   "answers": [
+    "사야"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20039,
+   "name": "키사키",
+   "answers": [
+    "키사키"
+   ],
+   "section": "Shanhaijing",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10017,
+   "name": "체리노",
+   "answers": [
+    "체리노"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10037,
+   "name": "마리나",
+   "answers": [
+    "마리나"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10055,
+   "name": "시구레",
+   "answers": [
+    "시구레"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10075,
+   "name": "메루",
+   "answers": [
+    "메루"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10131,
+   "name": "타카네",
+   "answers": [
+    "타카네"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10151,
+   "name": "안나",
+   "answers": [
+    "안나"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": false
+  },
+  {
+   "id": 13013,
+   "name": "모미지",
+   "answers": [
+    "모미지"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16007,
+   "name": "토모에",
+   "answers": [
+    "토모에"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20026,
+   "name": "미노리",
+   "answers": [
+    "미노리"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20052,
+   "name": "야쿠모",
+   "answers": [
+    "야쿠모"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20062,
+   "name": "에리나",
+   "answers": [
+    "에리나"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": false
+  },
+  {
+   "id": 26006,
+   "name": "노도카",
+   "answers": [
+    "노도카"
+   ],
+   "section": "RedWinter",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10137,
+   "name": "코노카",
+   "answers": [
+    "코노카"
+   ],
+   "section": "Valkyrie",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 13012,
+   "name": "키리노",
+   "answers": [
+    "키리노"
+   ],
+   "section": "Valkyrie",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16008,
+   "name": "후부키",
+   "answers": [
+    "후부키"
+   ],
+   "section": "Valkyrie",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20023,
+   "name": "칸나",
+   "answers": [
+    "칸나"
+   ],
+   "section": "Valkyrie",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10038,
+   "name": "미야코",
+   "answers": [
+    "미야코"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10039,
+   "name": "미유",
+   "answers": [
+    "미유"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10139,
+   "name": "니코",
+   "answers": [
+    "니코"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10140,
+   "name": "쿠루미",
+   "answers": [
+    "쿠루미"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16020,
+   "name": "오토기",
+   "answers": [
+    "오토기"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20014,
+   "name": "사키",
+   "answers": [
+    "사키"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20018,
+   "name": "모에",
+   "answers": [
+    "모에"
+   ],
+   "section": "SRT",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10041,
+   "name": "미사키",
+   "answers": [
+    "미사키"
+   ],
+   "section": "Arius",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10042,
+   "name": "아츠코",
+   "answers": [
+    "아츠코"
+   ],
+   "section": "Arius",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10048,
+   "name": "사오리",
+   "answers": [
+    "사오리"
+   ],
+   "section": "Arius",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10130,
+   "name": "스바루",
+   "answers": [
+    "스바루"
+   ],
+   "section": "Arius",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20017,
+   "name": "히요리",
+   "answers": [
+    "히요리"
+   ],
+   "section": "Arius",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10117,
+   "name": "히카리",
+   "answers": [
+    "히카리"
+   ],
+   "section": "Highlander",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10118,
+   "name": "노조미",
+   "answers": [
+    "노조미"
+   ],
+   "section": "Highlander",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 16017,
+   "name": "아오바",
+   "answers": [
+    "아오바"
+   ],
+   "section": "Highlander",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10125,
+   "name": "에리",
+   "answers": [
+    "에리"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10126,
+   "name": "카노에",
+   "answers": [
+    "카노에"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10127,
+   "name": "미요",
+   "answers": [
+    "미요"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10128,
+   "name": "후유",
+   "answers": [
+    "후유"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10138,
+   "name": "레나",
+   "answers": [
+    "레나"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10152,
+   "name": "츠무기",
+   "answers": [
+    "츠무기"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": false
+  },
+  {
+   "id": 20050,
+   "name": "리츠",
+   "answers": [
+    "리츠"
+   ],
+   "section": "WildHunt",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10149,
+   "name": "코코로",
+   "answers": [
+    "코코로"
+   ],
+   "section": "Odyssey",
+   "jp": true,
+   "global": false
+  },
+  {
+   "id": 10150,
+   "name": "코토네",
+   "answers": [
+    "코토네"
+   ],
+   "section": "Odyssey",
+   "jp": true,
+   "global": false
+  },
+  {
+   "id": 10079,
+   "name": "미사카 미코토",
+   "answers": [
+    "미코토"
+   ],
+   "section": "Collab",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 10080,
+   "name": "쇼쿠호 미사키",
+   "answers": [
+    "미사키"
+   ],
+   "section": "Collab",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 20007,
+   "name": "하츠네 미쿠",
+   "answers": [
+    "미쿠"
+   ],
+   "section": "Collab",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": 26011,
+   "name": "사텐 루이코",
+   "answers": [
+    "루이코"
+   ],
+   "section": "Collab",
+   "jp": true,
+   "global": true
+  }
+ ]
+}

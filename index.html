@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src https://cdn.jsdelivr.net; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>BA 기억력 테스트</title>
+  <meta name="description" content="블루 아카이브 학생 이름을 입력해 맞히는 비공식 팬 퀴즈">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <span class="logo">BA 기억력 테스트</span>
+    <span class="top-note">비공식 팬 퀴즈</span>
+  </header>
+
+  <section id="setup" class="setup">
+    <h1>기억력 테스트</h1>
+    <p class="lead">학생 이름을 입력하면 칸이 열립니다. 이름만 받고 별명·성은 받지 않습니다.</p>
+
+    <div class="rows">
+      <fieldset class="row">
+        <legend>모드</legend>
+        <div class="choices">
+          <label><input type="radio" name="mode" value="free" checked><span>무제한</span></label>
+          <label><input type="radio" name="mode" value="timed"><span>타이머</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row" id="limit-option" hidden>
+        <legend>제한 시간</legend>
+        <div class="choices">
+          <label><input type="radio" name="limit" value="5"><span>5분</span></label>
+          <label><input type="radio" name="limit" value="10" checked><span>10분</span></label>
+          <label><input type="radio" name="limit" value="15"><span>15분</span></label>
+          <label><input type="radio" name="limit" value="20"><span>20분</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row">
+        <legend>서버</legend>
+        <div class="choices">
+          <label><input type="radio" name="server" value="global" checked><span>글로벌</span></label>
+          <label><input type="radio" name="server" value="jp"><span>일본 포함</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row">
+        <legend>콜라보</legend>
+        <div class="choices">
+          <label><input type="radio" name="collab" value="off" checked><span>제외</span></label>
+          <label><input type="radio" name="collab" value="on"><span>포함</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row">
+        <legend>빈 칸</legend>
+        <div class="choices">
+          <label><input type="radio" name="cover" value="mark" checked><span>물음표</span></label>
+          <label><input type="radio" name="cover" value="silhouette"><span>실루엣</span></label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="start-row">
+      <p class="summary"><b id="setup-count">0</b>명 · <span id="setup-best">기록 없음</span></p>
+      <button id="start" class="btn primary" type="button" disabled>시작</button>
+    </div>
+    <p id="load-error" class="error" hidden>학생 데이터를 불러오지 못했습니다. 새로고침해 주세요.</p>
+  </section>
+
+  <section id="game" class="game" hidden>
+    <div class="bar">
+      <form id="answer-form" class="answer" autocomplete="off">
+        <label class="sr-only" for="answer">학생 이름</label>
+        <input id="answer" type="text" placeholder="이름 입력 후 Enter" enterkeyhint="done" spellcheck="false">
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </form>
+      <div class="stats">
+        <div class="stat"><span class="label" id="clock-label">경과</span><span class="value" id="clock">00:00</span></div>
+        <div class="stat"><span class="label">맞힘</span><span class="value"><span id="score">0</span><small>/<span id="total">0</span></small></span></div>
+      </div>
+      <div class="actions">
+        <button id="giveup" class="btn" type="button">포기</button>
+        <button id="restart" class="btn" type="button">다시</button>
+        <button id="to-setup" class="btn" type="button">설정</button>
+      </div>
+    </div>
+    <main id="board" class="board"></main>
+  </section>
+
+  <dialog id="result" class="result">
+    <p class="result-reason" id="result-title"></p>
+    <p class="result-score"><span id="result-score"></span><small id="result-total"></small></p>
+    <dl class="result-meta">
+      <div><dt id="result-time-label">기록</dt><dd id="result-time"></dd></div>
+      <div><dt>최고</dt><dd id="result-best"></dd></div>
+    </dl>
+    <p class="result-mode" id="result-mode"></p>
+    <div class="result-actions">
+      <button id="copy" class="btn" type="button">결과 복사</button>
+      <button id="result-close" class="btn" type="button">정답 보기</button>
+      <button id="result-restart" class="btn primary" type="button">다시 하기</button>
+    </div>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <footer class="notice">
+    <p class="notice-lead">비공식 팬사이트이며 NEXON Games·넥슨·Yostar와 관련이 없습니다. 광고·후원 등 어떠한 수익도 받지 않습니다.</p>
+    <dl class="credits">
+      <div>
+        <dt>블루 아카이브</dt>
+        <dd>게임, 학생 이름·이미지의 권리는 © NEXON Games Co., Ltd.에 있습니다. 한국·글로벌 서비스는 넥슨, 일본 서비스는 Yostar입니다. 넥슨 <a href="https://m.nexon.com/terms/743" target="_blank" rel="noopener noreferrer">게임IP 사용가이드</a>를 따릅니다.</dd>
+      </div>
+      <div>
+        <dt>학생 목록</dt>
+        <dd><a href="https://schaledb.com" target="_blank" rel="noopener noreferrer">SchaleDB</a>의 데이터와 아이콘을 가공했습니다(<span id="data-date"></span>).</dd>
+      </div>
+      <div>
+        <dt>아이디어</dt>
+        <dd><a href="https://lynette08.github.io/genshin_quiz/" target="_blank" rel="noopener noreferrer">원신 공익</a>에서 아이디어를 얻었습니다.</dd>
+      </div>
+      <div>
+        <dt>글꼴</dt>
+        <dd>경기천년제목 © 경기도. 눈누 배포본을 jsDelivr에서 불러옵니다.</dd>
+      </div>
+      <div>
+        <dt>문의</dt>
+        <dd><a href="mailto:bluequiz@tensi.org">bluequiz@tensi.org</a> · 권리자 요청 시 해당 내용을 바로 내립니다.</dd>
+      </div>
+      <div>
+        <dt>개인정보</dt>
+        <dd>입력한 이름과 기록은 이 브라우저(localStorage)에만 저장되며 어디로도 보내지 않습니다. 글꼴 파일을 받을 때 jsDelivr에 접속합니다.</dd>
+      </div>
+    </dl>
+  </footer>
+</body>
+</html>
