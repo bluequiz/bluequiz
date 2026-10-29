@@ -145,12 +145,12 @@ body {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0.7rem max(16px, calc((100% - 1200px) / 2));
   background: var(--surface);
   border-bottom: 1px solid var(--line-strong);
 }
-.answer { flex: 1 1 260px; margin: 0; position: relative; }
+.answer { flex: 1 1 220px; min-width: 0; margin: 0; position: relative; }
 .answer input {
   width: 100%;
   font: inherit;
@@ -248,7 +248,8 @@ body {
 @media (max-width: 640px) {
   .setup { padding-top: 1.75rem; }
   .row { grid-template-columns: 1fr; gap: 0.4rem; }
-  .bar { gap: 0.6rem 1rem; }
+  .bar { gap: 0.6rem 1rem; flex-wrap: wrap; }
+  .answer { flex-basis: 100%; }
   .stats { flex: 1; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(66px, 1fr)); gap: 4px; }
 }
