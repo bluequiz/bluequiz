@@ -279,7 +279,12 @@ $('giveup').addEventListener('click', () => {
   else setGiveupArmed(true);
 });
 $('restart').addEventListener('click', () => { $('result').close(); start(); });
-$('to-setup').addEventListener('click', toSetup);
+$('to-setup').addEventListener('click', () => {
+  if (game && !game.over) $('leave').showModal();
+  else toSetup();
+});
+$('leave-ok').addEventListener('click', () => { $('leave').close(); toSetup(); });
+$('leave-cancel').addEventListener('click', () => { $('leave').close(); $('answer').focus(); });
 $('result-restart').addEventListener('click', () => { $('result').close(); start(); });
 $('result-close').addEventListener('click', () => $('result').close());
 $('copy').addEventListener('click', copyResult);

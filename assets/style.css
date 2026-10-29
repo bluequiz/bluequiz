@@ -227,6 +227,7 @@ body {
 .result-meta dt { color: var(--muted); }
 .result-meta dd { margin: 0; }
 .result-mode { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
+.confirm-text { margin: 0; line-height: 1.6; }
 .result-actions { display: flex; gap: 0.4rem; justify-content: flex-end; flex-wrap: wrap; margin-top: 1.25rem; }
 
 .notice { padding: 1.5rem 16px 2rem; font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--line); }
