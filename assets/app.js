@@ -284,7 +284,8 @@ $('copy').addEventListener('click', copyResult);
 
 updateSetup();
 try {
-  const res = await fetch('data/students.json');
+  // 학생 목록이 바뀌었는데 브라우저에 남은 옛 목록을 쓰지 않도록 매번 서버에 확인한다.
+  const res = await fetch('data/students.json', { cache: 'no-cache' });
   if (!res.ok) throw new Error(res.status);
   data = await res.json();
   const date = new Date(data.generatedAt);
