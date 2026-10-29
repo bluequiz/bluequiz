@@ -137,7 +137,7 @@ function start() {
   $('clock-label').textContent = settings.mode === 'timed' ? '남은 시간' : '경과';
   $('answer').disabled = false;
   $('answer').value = '';
-  $('feedback').textContent = '';
+  feedback('');
   setGiveupArmed(false);
   $('giveup').hidden = false;
   $('setup').hidden = true;
@@ -186,7 +186,7 @@ function submit(event) {
     sec.found++;
     paintSection(sec);
     $('score').textContent = game.found.size;
-    $('feedback').textContent = '';
+    feedback('');
     toast(next);
     input.value = '';
     if (game.found.size === game.students.length) finish('clear');
@@ -195,10 +195,15 @@ function submit(event) {
   input.classList.remove('shake');
   void input.offsetWidth;
   input.classList.add('shake');
-  input.select();
 }
 
+// 틀린 입력은 지우고, 안내 문구를 입력칸의 빈칸 안내(placeholder) 자리에 빨간색으로 보여 준다.
+const PLACEHOLDER = '이름 입력 후 Enter';
 function feedback(text) {
+  const input = $('answer');
+  if (text) input.value = '';
+  input.placeholder = text || PLACEHOLDER;
+  input.classList.toggle('error', Boolean(text));
   $('feedback').textContent = text;
 }
 
@@ -217,7 +222,7 @@ function finish(reason) {
   tick();
   const time = elapsed();
   $('answer').disabled = true;
-  $('feedback').textContent = '';
+  feedback('');
   setGiveupArmed(false);
   $('giveup').hidden = true;
   for (const st of game.students) if (!game.found.has(st.id)) showStudent(st, 'missed');
@@ -272,7 +277,7 @@ function toSetup() {
 document.querySelectorAll('#setup input').forEach(input => input.addEventListener('change', updateSetup));
 $('start').addEventListener('click', start);
 $('answer-form').addEventListener('submit', submit);
-$('answer').addEventListener('input', () => { $('feedback').textContent = ''; });
+$('answer').addEventListener('input', () => { if ($('answer').classList.contains('error')) feedback(''); });
 $('giveup').addEventListener('click', () => {
   if (game.over) return;
   if ($('giveup').dataset.armed) finish('giveup');

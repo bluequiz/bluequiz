@@ -8,8 +8,8 @@
   <title>BA 기억력 테스트</title>
   <meta name="description" content="블루 아카이브 학생 이름을 입력해 맞히는 비공식 팬 퀴즈">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=5">
-  <script type="module" src="assets/app.js?v=5"></script>
+  <link rel="stylesheet" href="assets/style.css?v=6">
+  <script type="module" src="assets/app.js?v=6"></script>
 </head>
 <body>
   <header class="top">
@@ -83,7 +83,7 @@
       <form id="answer-form" class="answer" autocomplete="off">
         <label class="sr-only" for="answer">학생 이름</label>
         <input id="answer" type="text" placeholder="이름 입력 후 Enter" enterkeyhint="done" spellcheck="false">
-        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <p id="feedback" class="sr-only" aria-live="polite"></p>
       </form>
       <div class="stats">
         <div class="stat"><span class="label" id="clock-label">경과</span><span class="value" id="clock">00:00</span></div>

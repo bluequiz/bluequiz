@@ -164,7 +164,8 @@ body {
 }
 .answer input:disabled { opacity: 0.5; }
 .answer input.shake { animation: shake 0.25s; border-color: var(--bad); }
-.feedback { position: absolute; left: 0; top: 100%; margin: 2px 0 0; font-size: 0.8rem; color: var(--bad); white-space: nowrap; }
+.answer input.error { border-color: var(--bad); }
+.answer input.error::placeholder { color: var(--bad); opacity: 1; }
 
 .stats { display: flex; gap: 1.5rem; flex-shrink: 0; }
 .stat { display: grid; line-height: 1.15; }
