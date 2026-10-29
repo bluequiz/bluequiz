@@ -139,6 +139,7 @@ function start() {
   $('answer').value = '';
   $('feedback').textContent = '';
   setGiveupArmed(false);
+  $('giveup').hidden = false;
   $('setup').hidden = true;
   $('notice').hidden = true;
   $('game').hidden = false;
@@ -218,6 +219,7 @@ function finish(reason) {
   $('answer').disabled = true;
   $('feedback').textContent = '';
   setGiveupArmed(false);
+  $('giveup').hidden = true;
   for (const st of game.students) if (!game.found.has(st.id)) showStudent(st, 'missed');
 
   const record = { score: game.found.size, time };

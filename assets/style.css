@@ -172,6 +172,8 @@ body {
 .stat .value small { font-size: 0.6em; color: var(--muted); font-weight: 500; }
 .stat .value.warn { color: var(--bad); }
 .actions { display: flex; gap: 0.4rem; }
+/* "정말 포기?"로 글자가 바뀌어도 폭이 그대로여서 줄이 밀리지 않게 한다. */
+#giveup { min-width: 6.2em; }
 
 .board { width: min(100%, 1232px); margin: 0 auto; padding: 1.5rem 16px 2rem; display: grid; gap: 2rem; }
 .section-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
