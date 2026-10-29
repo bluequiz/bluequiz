@@ -7,7 +7,7 @@ import { mkdir, readFile, readdir, unlink, writeFile, access } from 'node:fs/pro
 const BASE = 'https://schaledb.com';
 const ROOT = new URL('../', import.meta.url);
 const IMG_DIR = new URL('img/students/', ROOT);
-const SECTION_NAMES = { Chronos: '크로노스', ETC: '기타', Collab: '콜라보', GSC: '총학생회' };
+const SECTION_NAMES = { Chronos: '크로노스', ETC: '기타', Collab: '콜라보', Schale: '샬레', GSC: '총학생회' };
 
 const isAlt = s => /[(*（]/.test(s.Name);
 const baseName = name => name.replace(/\s*[(*（].*$/, '').trim();
@@ -79,11 +79,13 @@ for (const versions of groups.values()) {
 }
 
 const releasedNames = new Set(students.map(s => s.fullName));
-// unreleased.json에서 "jp": true인 학생은 일본 서버에 나왔지만 SchaleDB에 아직 없는 학생이다.
+// unreleased.json에서 "jp": true는 일본 서버에만, "global": true는 글로벌 서버까지 나온 것으로 치는 학생이다
+// (SchaleDB에 아직 없는 학생이나 아로나처럼 SchaleDB가 다루지 않는 인물). 둘 다 없으면 미실장 학생이다.
 for (const u of unreleased) {
   if (releasedNames.has(u.page)) console.warn(`"${u.page}"이 SchaleDB에 들어왔습니다. data/unreleased.json에서 빼세요.`);
-  const student = { id: u.id, name: u.name, answers: [normalize(u.name)], section: u.section, jp: Boolean(u.jp), global: false, fullName: u.page };
-  if (!u.jp) student.unreleased = true;
+  const answers = [...new Set((u.answers ?? [u.name]).map(normalize))];
+  const student = { id: u.id, name: u.name, answers, section: u.section, jp: Boolean(u.jp || u.global), global: Boolean(u.global), fullName: u.page };
+  if (!student.jp) student.unreleased = true;
   students.push(student);
 }
 

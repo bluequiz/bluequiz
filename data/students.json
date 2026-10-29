@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29T05:35:49.452Z",
+ "generatedAt": "2026-10-29T06:01:09.176Z",
  "sections": [
   {
    "id": "Abydos",
@@ -64,6 +64,10 @@
   {
    "id": "Collab",
    "name": "콜라보"
+  },
+  {
+   "id": "Schale",
+   "name": "샬레"
   },
   {
    "id": "GSC",
@@ -1965,6 +1969,48 @@
     "루이코"
    ],
    "section": "Collab",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": "u-arona",
+   "name": "아로나",
+   "answers": [
+    "아로나"
+   ],
+   "section": "Schale",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": "u-plana",
+   "name": "프라나",
+   "answers": [
+    "프라나"
+   ],
+   "section": "Schale",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": "u-president",
+   "name": "총학생회장",
+   "answers": [
+    "총학생회장",
+    "총학"
+   ],
+   "section": "GSC",
+   "jp": true,
+   "global": true
+  },
+  {
+   "id": "u-fake-president",
+   "name": "가짜 총학생회장",
+   "answers": [
+    "가짜총학생회장",
+    "칼학"
+   ],
+   "section": "GSC",
    "jp": true,
    "global": true
   },

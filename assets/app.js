@@ -44,7 +44,15 @@ function settingsLabel(s) {
   ].join(' · ');
 }
 
-const imageOf = st => `img/students/${st.id}.webp`;
+// 아이콘이 아직 없는 학생(예: 프라나)은 깨진 그림 대신 빈 칸으로 둔다.
+function studentImage(st, className) {
+  const img = el('img', className);
+  img.src = `img/students/${st.id}.webp`;
+  img.alt = '';
+  img.loading = 'lazy';
+  img.addEventListener('error', () => img.remove());
+  return img;
+}
 
 function pickStudents(s) {
   return data.students.filter(st =>
@@ -86,11 +94,7 @@ function buildBoard(students, silhouette) {
     const card = el('div', 'card');
     const face = el('div', 'face', silhouette ? undefined : '?');
     if (silhouette) {
-      const img = el('img', 'sil');
-      img.src = imageOf(st);
-      img.alt = '';
-      img.loading = 'lazy';
-      face.append(img);
+      face.append(studentImage(st, 'sil'));
     }
     const name = el('div', 'name', '???');
     card.append(face, name);
@@ -110,9 +114,7 @@ function showStudent(st, state) {
   const { card, face, name } = game.cards.get(st.id);
   let img = face.querySelector('img');
   if (!img) {
-    img = el('img');
-    img.src = imageOf(st);
-    img.loading = 'lazy';
+    img = studentImage(st);
     face.replaceChildren(img);
   }
   img.classList.remove('sil');

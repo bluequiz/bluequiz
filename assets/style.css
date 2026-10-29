@@ -30,6 +30,7 @@
   --sel: #1c2b40;
   --sel-ink: #ffffff;
   --bad: #d6363b;
+  --warn: #d9730d;
   --hidden: #e6eaef;
   --silhouette: brightness(0) opacity(0.72);
   --font: 'GyeonggiMillenniumTitle', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
@@ -49,6 +50,7 @@
     --sel: #e4e9f0;
     --sel-ink: #12161c;
     --bad: #f06a6e;
+    --warn: #f5a04a;
     --hidden: #232a35;
     --silhouette: brightness(0) invert(1) opacity(0.28);
   }
@@ -102,6 +104,7 @@ body {
 /* 설정 */
 .setup { width: min(100%, 640px); margin: 0 auto; padding: 2.5rem 16px 2rem; flex: 1; }
 .lead { margin: 0 0 1.5rem; color: var(--muted); }
+.spoiler { color: var(--warn); }
 
 .rows { border-top: 1px solid var(--line-strong); }
 .row {
