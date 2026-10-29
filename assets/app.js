@@ -26,20 +26,20 @@ function readSettings() {
     limit: Number(pick('limit')),
     server: pick('server'),
     collab: pick('collab') === 'on',
-    unreleased: pick('unreleased') === 'on',
+    unreleased: pick('unreleased'),
     silhouette: pick('cover') === 'silhouette',
   };
 }
 
 const settingsKey = s =>
-  `baquiz:best:${s.mode}${s.mode === 'timed' ? s.limit : ''}:${s.server}:${s.collab ? 'collab' : 'base'}${s.unreleased ? ':unreleased' : ''}:${s.silhouette ? 'sil' : 'mark'}`;
+  `baquiz:best:${s.mode}${s.mode === 'timed' ? s.limit : ''}:${s.server}:${s.collab ? 'collab' : 'base'}${s.unreleased === 'off' ? '' : `:unreleased-${s.unreleased}`}:${s.silhouette ? 'sil' : 'mark'}`;
 
 function settingsLabel(s) {
   return [
     s.mode === 'timed' ? `타이머 ${s.limit}분` : '무제한',
     s.server === 'jp' ? '일본 포함' : '글로벌',
     s.collab ? '콜라보 포함' : '콜라보 제외',
-    ...(s.unreleased ? ['미실장 포함'] : []),
+    ...({ global: ['미실장(글로벌 등장)'], all: ['미실장 전부'] }[s.unreleased] ?? []),
     s.silhouette ? '실루엣' : '물음표',
   ].join(' · ');
 }
@@ -56,7 +56,8 @@ function studentImage(st, className) {
 
 function pickStudents(s) {
   return data.students.filter(st =>
-    (st.unreleased ? s.unreleased : s.server === 'jp' ? st.jp : st.global) && (s.collab || st.section !== 'Collab'));
+    (st.unreleased ? s.unreleased === 'all' || (s.unreleased === 'global' && st.unreleased === 'global')
+      : s.server === 'jp' ? st.jp : st.global) && (s.collab || st.section !== 'Collab'));
 }
 
 const better = (a, b) => !b || a.score > b.score || (a.score === b.score && a.time < b.time);

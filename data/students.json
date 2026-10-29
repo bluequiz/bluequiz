@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29T06:01:09.176Z",
+ "generatedAt": "2026-10-29T06:21:24.814Z",
  "sections": [
   {
    "id": "Abydos",
@@ -134,7 +134,7 @@
    "section": "Abydos",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10100,
@@ -396,7 +396,7 @@
    "section": "Gehenna",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-karen",
@@ -407,7 +407,7 @@
    "section": "Gehenna",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-shoko",
@@ -418,7 +418,7 @@
    "section": "Gehenna",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": 20041,
@@ -679,7 +679,7 @@
    "section": "Millennium",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-tsubasa",
@@ -690,7 +690,7 @@
    "section": "Millennium",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 20024,
@@ -1081,7 +1081,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-ayame",
@@ -1092,7 +1092,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10119,
@@ -1143,7 +1143,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-shuro",
@@ -1154,7 +1154,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-azami",
@@ -1165,7 +1165,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-arata",
@@ -1176,7 +1176,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-natsuki",
@@ -1187,7 +1187,7 @@
    "section": "Hyakkiyako",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10033,
@@ -1228,7 +1228,7 @@
    "section": "Shanhaijing",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 20002,
@@ -1289,7 +1289,7 @@
    "section": "Shanhaijing",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-kai",
@@ -1300,7 +1300,40 @@
    "section": "Shanhaijing",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
+  },
+  {
+   "id": "u-suiko",
+   "name": "스이코",
+   "answers": [
+    "스이코"
+   ],
+   "section": "Shanhaijing",
+   "jp": false,
+   "global": false,
+   "unreleased": "global"
+  },
+  {
+   "id": "u-nagomi",
+   "name": "나고미",
+   "answers": [
+    "나고미"
+   ],
+   "section": "Shanhaijing",
+   "jp": false,
+   "global": false,
+   "unreleased": "global"
+  },
+  {
+   "id": "u-yoko",
+   "name": "요코",
+   "answers": [
+    "요코"
+   ],
+   "section": "Shanhaijing",
+   "jp": false,
+   "global": false,
+   "unreleased": "global"
   },
   {
    "id": 10017,
@@ -1481,7 +1514,7 @@
    "section": "Valkyrie",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10038,
@@ -1532,7 +1565,7 @@
    "section": "SRT",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10139,
@@ -1623,7 +1656,7 @@
    "section": "Arius",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10117,
@@ -1654,7 +1687,7 @@
    "section": "Highlander",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 16017,
@@ -1675,7 +1708,7 @@
    "section": "WildHunt",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 10125,
@@ -1756,7 +1789,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-ami",
@@ -1767,7 +1800,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-sumika",
@@ -1778,7 +1811,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-mitsuki",
@@ -1789,7 +1822,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-sanae",
@@ -1800,7 +1833,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": 10149,
@@ -1831,7 +1864,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-sayuri",
@@ -1842,7 +1875,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-nanami",
@@ -1853,7 +1886,7 @@
    "section": "Odyssey",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "jp"
   },
   {
    "id": "u-mai",
@@ -1864,7 +1897,7 @@
    "section": "Chronos",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-shinon",
@@ -1875,7 +1908,7 @@
    "section": "Chronos",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-akira",
@@ -1886,7 +1919,7 @@
    "section": "ETC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-akemi",
@@ -1897,40 +1930,19 @@
    "section": "ETC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
-   "id": "u-suiko",
-   "name": "스이코",
+   "id": "u-niya",
+   "name": "히죽히죽 교수",
    "answers": [
-    "스이코"
+    "히죽히죽교수",
+    "니야니야교수"
    ],
    "section": "ETC",
    "jp": false,
    "global": false,
-   "unreleased": true
-  },
-  {
-   "id": "u-nagomi",
-   "name": "나고미",
-   "answers": [
-    "나고미"
-   ],
-   "section": "ETC",
-   "jp": false,
-   "global": false,
-   "unreleased": true
-  },
-  {
-   "id": "u-yoko",
-   "name": "요코",
-   "answers": [
-    "요코"
-   ],
-   "section": "ETC",
-   "jp": false,
-   "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": 20007,
@@ -2023,7 +2035,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-kaya",
@@ -2034,7 +2046,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-ayumu",
@@ -2045,7 +2057,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-momoka",
@@ -2056,7 +2068,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-aoi",
@@ -2067,7 +2079,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-haine",
@@ -2078,7 +2090,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   },
   {
    "id": "u-sumomo",
@@ -2089,7 +2101,7 @@
    "section": "GSC",
    "jp": false,
    "global": false,
-   "unreleased": true
+   "unreleased": "global"
   }
  ]
 }

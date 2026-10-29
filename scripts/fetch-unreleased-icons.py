@@ -2,6 +2,7 @@
 
 각 항목의 "icon"은 나무위키의 "<이름>프로필" 이미지(배경이 투명한 얼굴 이미지) 주소다.
 가운데 기준 정사각형으로 잘라 120px webp로 저장하고, 이미 있는 아이콘은 건너뛴다.
+프로필 이미지가 없어 전신 이미지를 쓸 때는 "crop": [x, y, 한 변]으로 얼굴 부분을 지정한다.
 실행: python scripts/fetch-unreleased-icons.py [--force]  (Pillow 필요)
 """
 import io
@@ -23,12 +24,15 @@ def get(url):
         return res.read()
 
 
-def make_icon(data, out):
+def make_icon(data, out, crop=None):
     img = Image.open(io.BytesIO(data)).convert("RGBA")
-    w, h = img.size
-    side = min(w, h)
-    x = (w - side) // 2
-    img.crop((x, 0, x + side, side)).resize((120, 120), Image.LANCZOS).save(out, "WEBP", quality=90)
+    if crop:
+        x, y, side = crop
+    else:
+        w, h = img.size
+        side = min(w, h)
+        x, y = (w - side) // 2, 0
+    img.crop((x, y, x + side, y + side)).resize((120, 120), Image.LANCZOS).save(out, "WEBP", quality=90)
 
 
 def main():
@@ -43,7 +47,7 @@ def main():
             failed.append(e["id"])
             continue
         try:
-            make_icon(get(e["icon"]), out)
+            make_icon(get(e["icon"]), out, e.get("crop"))
             print("ok", e["id"])
         except Exception as err:
             failed.append(e["id"])

@@ -80,12 +80,13 @@ for (const versions of groups.values()) {
 
 const releasedNames = new Set(students.map(s => s.fullName));
 // unreleased.json에서 "jp": true는 일본 서버에만, "global": true는 글로벌 서버까지 나온 것으로 치는 학생이다
-// (SchaleDB에 아직 없는 학생이나 아로나처럼 SchaleDB가 다루지 않는 인물). 둘 다 없으면 미실장 학생이다.
+// (SchaleDB에 아직 없는 학생이나 아로나처럼 SchaleDB가 다루지 않는 인물). 둘 다 없으면 미실장 학생이고,
+// 미실장 학생 중 "seen": "global"은 글로벌 서버 스토리에 이미 등장한 학생이다.
 for (const u of unreleased) {
   if (releasedNames.has(u.page)) console.warn(`"${u.page}"이 SchaleDB에 들어왔습니다. data/unreleased.json에서 빼세요.`);
   const answers = [...new Set((u.answers ?? [u.name]).map(normalize))];
   const student = { id: u.id, name: u.name, answers, section: u.section, jp: Boolean(u.jp || u.global), global: Boolean(u.global), fullName: u.page };
-  if (!student.jp) student.unreleased = true;
+  if (!student.jp) student.unreleased = u.seen === 'global' ? 'global' : 'jp';
   students.push(student);
 }
 
