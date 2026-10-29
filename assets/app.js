@@ -1,6 +1,6 @@
 // 학생 데이터는 모두 textContent·속성으로만 넣는다(innerHTML 사용 금지).
 const $ = id => document.getElementById(id);
-const normalize = s => s.normalize('NFC').replace(/\s+/g, '');
+const normalize = s => s.normalize('NFC').replace(/[\s*]+/g, '');
 const fmt = ms => {
   const s = Math.max(0, Math.round(ms / 1000));
   return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
@@ -26,18 +26,20 @@ function readSettings() {
     limit: Number(pick('limit')),
     server: pick('server'),
     collab: pick('collab') === 'on',
+    unreleased: pick('unreleased') === 'on',
     silhouette: pick('cover') === 'silhouette',
   };
 }
 
 const settingsKey = s =>
-  `baquiz:best:${s.mode}${s.mode === 'timed' ? s.limit : ''}:${s.server}:${s.collab ? 'collab' : 'base'}:${s.silhouette ? 'sil' : 'mark'}`;
+  `baquiz:best:${s.mode}${s.mode === 'timed' ? s.limit : ''}:${s.server}:${s.collab ? 'collab' : 'base'}${s.unreleased ? ':unreleased' : ''}:${s.silhouette ? 'sil' : 'mark'}`;
 
 function settingsLabel(s) {
   return [
     s.mode === 'timed' ? `타이머 ${s.limit}분` : '무제한',
     s.server === 'jp' ? '일본 포함' : '글로벌',
     s.collab ? '콜라보 포함' : '콜라보 제외',
+    ...(s.unreleased ? ['미실장 포함'] : []),
     s.silhouette ? '실루엣' : '물음표',
   ].join(' · ');
 }
@@ -45,7 +47,8 @@ function settingsLabel(s) {
 const imageOf = st => `img/students/${st.id}.webp`;
 
 function pickStudents(s) {
-  return data.students.filter(st => (s.server === 'jp' ? st.jp : st.global) && (s.collab || st.section !== 'Collab'));
+  return data.students.filter(st =>
+    (st.unreleased ? s.unreleased : s.server === 'jp' ? st.jp : st.global) && (s.collab || st.section !== 'Collab'));
 }
 
 const better = (a, b) => !b || a.score > b.score || (a.score === b.score && a.time < b.time);
