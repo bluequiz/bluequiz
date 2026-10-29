@@ -140,6 +140,7 @@ function start() {
   $('feedback').textContent = '';
   setGiveupArmed(false);
   $('setup').hidden = true;
+  $('notice').hidden = true;
   $('game').hidden = false;
   $('answer').focus();
   game.timer = setInterval(tick, 250);
@@ -262,6 +263,7 @@ function toSetup() {
   $('result').close();
   $('game').hidden = true;
   $('setup').hidden = false;
+  $('notice').hidden = false;
   updateSetup();
 }
 
@@ -285,7 +287,9 @@ try {
   const res = await fetch('data/students.json');
   if (!res.ok) throw new Error(res.status);
   data = await res.json();
-  $('data-date').textContent = `${new Date(data.generatedAt).toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} 기준`;
+  const date = new Date(data.generatedAt);
+  $('data-date').textContent = `${date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul' })} 기준`;
+  $('lead-date').textContent = date.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' });
   $('start').disabled = false;
   updateSetup();
 } catch {

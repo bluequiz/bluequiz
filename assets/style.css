@@ -97,12 +97,10 @@ body {
   background: var(--surface);
 }
 .logo { font-weight: 700; font-size: 1.15rem; }
-.top-note { font-size: 0.8rem; color: var(--muted); }
 
 /* 설정 */
 .setup { width: min(100%, 640px); margin: 0 auto; padding: 2.5rem 16px 2rem; flex: 1; }
-h1 { margin: 0; font-size: 2rem; font-weight: 700; }
-.lead { margin: 0.5rem 0 2rem; color: var(--muted); }
+.lead { margin: 0 0 1.5rem; color: var(--muted); }
 
 .rows { border-top: 1px solid var(--line-strong); }
 .row {
@@ -247,7 +245,6 @@ h1 { margin: 0; font-size: 2rem; font-weight: 700; }
 
 @media (max-width: 640px) {
   .setup { padding-top: 1.75rem; }
-  h1 { font-size: 1.6rem; }
   .row { grid-template-columns: 1fr; gap: 0.4rem; }
   .bar { gap: 0.6rem 1rem; }
   .stats { flex: 1; }
