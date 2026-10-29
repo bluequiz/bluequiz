@@ -237,6 +237,7 @@ body {
 .notice { padding: 1.5rem 16px 2rem; font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--line); }
 .notice-lead, .credits { margin: 0 auto; max-width: 1200px; }
 .notice-lead { margin-bottom: 0.75rem; }
+.credits.contact { margin-bottom: 0.75rem; }
 .credits { display: grid; gap: 0.35rem; }
 .credits div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0 1rem; }
 .credits dt { color: var(--ink); }

@@ -258,7 +258,7 @@ function setGiveupArmed(armed) {
 }
 
 async function copyResult() {
-  const text = `BA 기억력 테스트 (${settingsLabel(game.settings)})\n${game.result.score} / ${game.students.length} · ${fmt(game.result.time)}\n${location.origin}${location.pathname}`;
+  const text = `블루아카이브 기억력 테스트 (${settingsLabel(game.settings)})\n${game.result.score} / ${game.students.length} · ${fmt(game.result.time)}\n${location.origin}${location.pathname}`;
   try {
     await navigator.clipboard.writeText(text);
     $('copy').textContent = '복사됨';
