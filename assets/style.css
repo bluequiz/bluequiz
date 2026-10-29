@@ -79,6 +79,7 @@ body {
   padding: 0.5rem 0.9rem;
   border-radius: 4px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .btn:hover { background: var(--hidden); }
 .btn:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
@@ -165,13 +166,13 @@ body {
 .answer input.shake { animation: shake 0.25s; border-color: var(--bad); }
 .feedback { position: absolute; left: 0; top: 100%; margin: 2px 0 0; font-size: 0.8rem; color: var(--bad); white-space: nowrap; }
 
-.stats { display: flex; gap: 1.5rem; }
+.stats { display: flex; gap: 1.5rem; flex-shrink: 0; }
 .stat { display: grid; line-height: 1.15; }
 .stat .label { font-size: 0.75rem; color: var(--muted); }
 .stat .value { font-size: 1.5rem; font-weight: 700; min-width: 3.4em; }
 .stat .value small { font-size: 0.6em; color: var(--muted); font-weight: 500; }
 .stat .value.warn { color: var(--bad); }
-.actions { display: flex; gap: 0.4rem; }
+.actions { display: flex; gap: 0.4rem; flex-shrink: 0; }
 /* "정말 포기?"로 글자가 바뀌어도 폭이 그대로여서 줄이 밀리지 않게 한다. */
 #giveup { min-width: 6.2em; }
 
