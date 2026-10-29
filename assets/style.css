@@ -36,24 +36,22 @@
   --font: 'GyeonggiMillenniumTitle', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --bg: #12161c;
-    --surface: #1a2029;
-    --line: #2d3541;
-    --line-strong: #c9d2de;
-    --ink: #e4e9f0;
-    --muted: #8d97a5;
-    --blue: #3b9df0;
-    --blue-ink: #0b1420;
-    --sel: #e4e9f0;
-    --sel-ink: #12161c;
-    --bad: #f06a6e;
-    --warn: #f5a04a;
-    --hidden: #232a35;
-    --silhouette: brightness(0) invert(1) opacity(0.28);
-  }
+:root.dark {
+  color-scheme: dark;
+  --bg: #12161c;
+  --surface: #1a2029;
+  --line: #2d3541;
+  --line-strong: #c9d2de;
+  --ink: #e4e9f0;
+  --muted: #8d97a5;
+  --blue: #3b9df0;
+  --blue-ink: #0b1420;
+  --sel: #e4e9f0;
+  --sel-ink: #12161c;
+  --bad: #f06a6e;
+  --warn: #f5a04a;
+  --hidden: #232a35;
+  --silhouette: brightness(0) invert(1) opacity(0.28);
 }
 
 * { box-sizing: border-box; }
@@ -93,13 +91,28 @@ body {
 /* 머리띠 */
 .top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 0.9rem 16px;
   border-bottom: 3px solid var(--blue);
   background: var(--surface);
 }
 .logo { font-weight: 700; font-size: 1.15rem; }
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--line-strong); }
+.theme-toggle:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 
 /* 설정 */
 .setup { width: min(100%, 640px); margin: 0 auto; padding: 2.5rem 16px 2rem; flex: 1; }

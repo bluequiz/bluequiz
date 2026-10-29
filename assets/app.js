@@ -277,6 +277,36 @@ function toSetup() {
   updateSetup();
 }
 
+// 테마: <html>.dark + localStorage['theme']. 사용자가 고르기 전에는 시스템 설정을 따른다(assets/theme-init.js와 짝).
+const media = matchMedia('(prefers-color-scheme: dark)');
+const storedTheme = () => { try { const t = localStorage.getItem('theme'); return t === 'light' || t === 'dark' ? t : null; } catch { return null; } };
+function applyTheme(theme) {
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+  const dark = theme === 'dark';
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('aria-hidden', 'true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  // 지금 다크면 해(누르면 라이트), 라이트면 달 모양을 보여 준다.
+  path.setAttribute('d', dark
+    ? 'M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'
+    : 'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z');
+  svg.append(path);
+  $('theme-toggle').replaceChildren(svg);
+  $('theme-toggle').setAttribute('aria-label', dark ? '라이트 모드로 전환' : '다크 모드로 전환');
+  $('theme-toggle').title = dark ? '라이트 모드로 전환' : '다크 모드로 전환';
+}
+applyTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+$('theme-toggle').addEventListener('click', () => {
+  const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+  try { localStorage.setItem('theme', next); } catch {}
+  applyTheme(next);
+});
+media.addEventListener('change', () => { if (!storedTheme()) applyTheme(media.matches ? 'dark' : 'light'); });
+addEventListener('storage', e => {
+  if (e.key === 'theme' || e.key === null) applyTheme(storedTheme() ?? (media.matches ? 'dark' : 'light'));
+});
+
 document.querySelectorAll('#setup input').forEach(input => input.addEventListener('change', updateSetup));
 $('start').addEventListener('click', start);
 $('answer-form').addEventListener('submit', submit);
